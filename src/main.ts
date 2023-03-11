@@ -9,7 +9,7 @@ import { INestApplication, Type } from '@nestjs/common';
 import { DocumentBuilder, SwaggerCustomOptions, SwaggerModule } from '@nestjs/swagger';
 import { SuperadminModule } from './superadmin/superadmin.module';
 import { supAdminModules } from './superadmin/super-admin.modules';
-import expressBasicAuth, * as basicAuth from 'express-basic-auth';
+import * as basicAuth from 'express-basic-auth';
 import { UserModules } from './user/user.modules';
 import { tenantModule } from './tenant/tenant-mod.module';
 
@@ -39,7 +39,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true
     // , logger:false
   });
-  app.use(['/swagger/superadmin'], basicAuth({
+  app.use(['/swagger/superadmin'], basicAuth.default({
     challenge: true,
     users: {
       'admin':'11111'
