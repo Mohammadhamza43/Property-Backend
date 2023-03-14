@@ -18,7 +18,10 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false
   },
-  "include": ["**/*"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.dto.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
