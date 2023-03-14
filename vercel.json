@@ -5,7 +5,7 @@
     },
     "builds": [
         {
-            "src": "src/main.ts",
+            "src": "**/*.ts",
             "use": "@vercel/node",
             "config": {
                 "includeFiles": ["**/*.dto.ts"]
