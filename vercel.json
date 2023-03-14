@@ -5,10 +5,10 @@
     },
     "builds": [
         {
-            "src": "**/*.ts",
+            "src": "src/main.ts",
             "use": "@vercel/node",
             "config": {
-                "includeFiles": ["**/*.dto.ts"]
+                "includeFiles": ["src/**/*.dto.ts"]
             }
         }
     ],
