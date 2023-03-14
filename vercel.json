@@ -2,7 +2,7 @@
     "version": 2,
     "env": {
         "DB_URL": "mongodb+srv://mairlakhani:0yAgOZkgo2SyIxv8@cluster0.mscoynh.mongodb.net/?retryWrites=true&w=majority"
-    }
+    },
     "builds": [
         {
             "src": "src/main.ts",
